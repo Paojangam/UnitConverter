@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Value in Centimeters:"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter value"
+        android:layout_below="@id/tv_input"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_select_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert To:"
+        android:textSize="18sp"
+        android:layout_below="@id/et_input"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:id="@+id/spinner_units"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_select_unit"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@id/spinner_units"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result:"
+        android:textSize="18sp"
+        android:layout_below="@id/btn_convert"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_result_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_below="@id/tv_result"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
